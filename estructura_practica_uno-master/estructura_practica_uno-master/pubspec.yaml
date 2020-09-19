@@ -1,0 +1,47 @@
+name: estructura_practica_1
+description: A new Flutter project.
+
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  cupertino_icons: ^0.1.3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+
+assets:
+  - assets/images/
+
+  # fonts:
+  #   - family: AkzidenzGrotesk BQ Medium
+  #     fonts:
+  #       - asset: assets/fonts/AkzidenzGrotesk-Medium.oft
+
+  #   - family: AkzidenzGrotesk BQ Medium Italic
+  #     fonts:
+  #       - asset: assets/fonts/AkzidenzGrotesk-MediumItalic.oft
+
+  #   - family: OpenSans Light
+  #     fonts:
+  #       - asset: assets/fonts/OpenSans-Light.ttf
+
+  #   - family: OpenSans Regular
+  #     fonts:
+  #       - asset: assets/fonts/OpenSans-Regular.ttf
+            
