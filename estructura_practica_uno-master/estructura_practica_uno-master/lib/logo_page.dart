@@ -10,8 +10,8 @@ class LogoPage extends StatefulWidget {
 class _LogoPageState extends State<LogoPage> {
   @override
   void initState() {
-    _go();
     super.initState();
+    _go();
   }
 
   @override

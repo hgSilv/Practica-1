@@ -160,6 +160,7 @@ class _HomeState extends State<Home> {
     ).then((dynamic product) {
       productsList.add(ProductItemCart(
         productTitle: product.productTitle,
+        productImage: product.productImage,
         productAmount: product.productAmount,
         productPrice: product.productPrice,
       ));
@@ -176,6 +177,7 @@ class _HomeState extends State<Home> {
     ).then((dynamic product) {
       productsList.add(ProductItemCart(
         productTitle: product.productTitle,
+        productImage: product.productImage,
         productAmount: product.productAmount,
         productPrice: product.productPrice,
       ));
@@ -192,6 +194,7 @@ class _HomeState extends State<Home> {
     ).then((dynamic product) {
       productsList.add(ProductItemCart(
         productTitle: product.productTitle,
+        productImage: product.productImage,
         productAmount: product.productAmount,
         productPrice: product.productPrice,
       ));

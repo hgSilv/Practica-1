@@ -3,6 +3,7 @@ import 'package:estructura_practica_1/models/product_repository.dart';
 
 class ProductItemCart {
   String productTitle;
+  String productImage;
   int productAmount;
   double productPrice;
   final ProductType typeOfProduct;
@@ -10,6 +11,7 @@ class ProductItemCart {
   ProductItemCart({
     this.typeOfProduct,
     @required this.productTitle,
+    @required this.productImage,
     @required this.productAmount,
     @required this.productPrice,
   });

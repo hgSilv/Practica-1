@@ -31,7 +31,7 @@ class _PaymentState extends State<Payment> {
                 onPressed: () {
                   _gotoPayment();
                 },
-                child: Text('Tarejeta credito/debito',
+                child: Text('Tarjeta credito/debito',
                     style: TextStyle(fontSize: 20)),
               ),
               const SizedBox(height: 30),
@@ -79,7 +79,7 @@ class _PaymentState extends State<Payment> {
               child: ListBody(
                 children: <Widget>[
                   Text(
-                      'Tu orden ha sido registra, para mas informacion busca en la opcion historial de compras en tu perfil'),
+                      'Tu orden ha sido registrada, para mas informacion busca en la opcion historial de compras en tu perfil'),
                 ],
               ),
             ),

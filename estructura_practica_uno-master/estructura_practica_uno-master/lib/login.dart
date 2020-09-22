@@ -15,7 +15,7 @@ class _LoginState extends State<Login> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: blue1,
+      backgroundColor: Colors.white,
       body: SafeArea(
           child: ListView(
         padding: EdgeInsets.symmetric(horizontal: 24.0),
@@ -60,7 +60,7 @@ class _LoginState extends State<Login> {
           Container(
             child: RaisedButton(
                 color: grey2,
-                child: Text('Registrate'),
+                child: Text('Ingresa'),
                 onPressed: () async {
                   Navigator.push(context, MaterialPageRoute(builder: (context) {
                     return Home(

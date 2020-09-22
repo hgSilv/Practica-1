@@ -1,3 +1,4 @@
+import 'package:estructura_practica_1/payment.dart';
 import 'package:flutter/material.dart';
 import 'package:estructura_practica_1/cart/item_cart.dart';
 import 'package:estructura_practica_1/models/product_item_cart.dart';
@@ -26,6 +27,9 @@ class _CartState extends State<Cart> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: Text('Carrito de Compras'),
+      ),
       body: Stack(
         children: <Widget>[
           Container(
@@ -41,8 +45,35 @@ class _CartState extends State<Cart> {
             ),
           ),
           Positioned(
-            bottom: 0,
+            bottom: 50,
             child: Text("Total: \$$_total"),
+          ),
+          Positioned(
+            bottom: 0,
+            child: RaisedButton(
+              onPressed: () {
+                Navigator.of(context).pop();
+                Navigator.of(context)
+                    .push(MaterialPageRoute(builder: (context) {
+                  return Payment();
+                }));
+              },
+              textColor: Colors.white,
+              padding: const EdgeInsets.all(0.0),
+              child: Container(
+                decoration: const BoxDecoration(
+                  gradient: LinearGradient(
+                    colors: <Color>[
+                      Color(0xFF0D47A1),
+                      Color(0xFF1976D2),
+                      Color(0xFF42A5F5),
+                    ],
+                  ),
+                ),
+                padding: const EdgeInsets.all(10.0),
+                child: const Text('Pagar', style: TextStyle(fontSize: 20)),
+              ),
+            ),
           ),
         ],
       ),
@@ -52,6 +83,7 @@ class _CartState extends State<Cart> {
   void _priceUpdate(double newItemPrice) {
     setState(() {
       _total += newItemPrice;
+      if (_total < 0) _total = 0;
     });
   }
 }

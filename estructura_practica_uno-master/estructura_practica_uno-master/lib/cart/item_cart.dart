@@ -31,6 +31,14 @@ class _ItemCartState extends State<ItemCart> {
           SizedBox(
             height: 12,
           ),
+          Container(
+            child: Padding(
+                padding: EdgeInsets.all(10),
+                child: Image.network(widget.product.productImage)),
+          ),
+          SizedBox(
+            height: 12,
+          ),
           IconButton(icon: Icon(Icons.remove_circle), onPressed: _remProd),
           SizedBox(
             height: 12,
@@ -58,6 +66,7 @@ class _ItemCartState extends State<ItemCart> {
   void _remProd() {
     setState(() {
       --widget.product.productAmount;
+      if (widget.product.productAmount <= 0) widget.product.productAmount = 0;
     });
     widget.onAmountUpdated(-1 * widget.product.productPrice);
   }

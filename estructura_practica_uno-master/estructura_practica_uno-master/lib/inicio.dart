@@ -14,43 +14,44 @@ class _InicioState extends State<Inicio> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: blue1,
+      backgroundColor: Colors.white,
       body: SafeArea(
-          child: ListView(
-        padding: EdgeInsets.symmetric(horizontal: 24.0),
-        children: <Widget>[
-          // Container(
-          //   margin: EdgeInsets.only(top: 80, bottom: 60),
-          //   child: Image.asset(
-          //     'assets/images/cupping.png',
-          //     height: 50,
-          //   ),
-          // ),
-          Container(
-            height: 50,
-            child: RaisedButton(
-                color: grey2,
-                child: Text('Registrate'),
-                onPressed: () {
-                  Navigator.of(context)
-                      .push(MaterialPageRoute(builder: (context) {
-                    return Registro();
-                  }));
-                }),
-          ),
-          Container(
-            child: RaisedButton(
-                color: grey2,
-                child: Text('Ingresa'),
-                onPressed: () {
-                  Navigator.of(context)
-                      .push(MaterialPageRoute(builder: (context) {
-                    return Login();
-                  }));
-                }),
-          )
-        ],
-      )),
+        child: ListView(
+          padding: EdgeInsets.symmetric(horizontal: 24.0),
+          children: <Widget>[
+            // Container(
+            //   margin: EdgeInsets.only(top: 80, bottom: 60),
+            //   child: Image.asset(
+            //     'assets/images/cupping.png',
+            //     height: 50,
+            //   ),
+            // ),
+            Container(
+              height: 50,
+              child: RaisedButton(
+                  color: grey2,
+                  child: Text('Registrate'),
+                  onPressed: () {
+                    Navigator.of(context)
+                        .push(MaterialPageRoute(builder: (context) {
+                      return Registro();
+                    }));
+                  }),
+            ),
+            Container(
+              child: RaisedButton(
+                  color: grey2,
+                  child: Text('Ingresa'),
+                  onPressed: () {
+                    Navigator.of(context)
+                        .push(MaterialPageRoute(builder: (context) {
+                      return Login();
+                    }));
+                  }),
+            )
+          ],
+        ),
+      ),
     );
   }
 }

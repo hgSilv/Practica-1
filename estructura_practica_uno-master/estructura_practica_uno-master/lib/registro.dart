@@ -17,7 +17,7 @@ class _RegistroState extends State<Registro> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: blue1,
+      backgroundColor: Colors.white,
       body: SafeArea(
           child: ListView(
         padding: EdgeInsets.symmetric(horizontal: 24.0),

@@ -1,3 +1,5 @@
+import 'package:estructura_practica_1/inicio.dart';
+import 'package:estructura_practica_1/logo_page.dart';
 import 'package:flutter/material.dart';
 import 'package:estructura_practica_1/home/home.dart';
 import 'package:estructura_practica_1/utils/constants.dart';
@@ -13,7 +15,8 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: PRIMARY_COLOR,
       ),
-      home: Home(title: APP_TITLE),
+      home: LogoPage(),
+      //home: Home(title: APP_TITLE),
     );
   }
 }
